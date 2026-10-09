@@ -88,7 +88,7 @@ sequenceDiagram
     participant Server
     participant Bob
 
-   Alice->>Alice: Generate ECDH P-256 key pair; keep private key in IndexedDB
+   Alice->>Alice: Generate ECDH P-256 key pair, keep private key in IndexedDB
    Alice->>Server: Publish public key during registration/key enrollment
    Alice->>Alice: Derive shared key with Bob using ECDH + HKDF
    Alice->>Alice: Encrypt text or media bytes with AES-256-GCM and a fresh IV
